@@ -1,0 +1,91 @@
+<!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">-->
+
+<style>
+    h2{
+        font-family: lobster, monospace;
+    }
+    .red-text{
+        color: #FF0000;
+    }
+    p{
+        font-size:16px;
+        font-family: monospace;
+    }
+    .smaller-size{
+        width: 100px;
+    }
+    .thick-green-border{
+        border-width: 10px;
+        border-style: solid;
+        border-color: green;
+        border-radius: 50%;
+    }
+    .silver-background{
+        background-color: silver;
+    }
+    #cat-photo-form{
+        background-color: grey;
+    }
+    [type='checkbox']{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    body{
+        background-color: #000;/* black background */
+        color: green;
+    }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+
+
+    <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+    <a href="#" >
+        <img class="smaller-size thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </a>
+    <div class="silver-background">
+        <p>Things cats love:</p>
+
+        <ul>
+            <li>milk</li>
+            <li>cheese</li>
+            <li>fish</li>
+        </ul>
+
+        <p>Top 3 things cats hate:</p>
+
+        <ol>
+            <li>dogs</li>
+            <li>water</li>
+            <li>birds</li>
+        </ol>
+    </div>
+
+    <form id="cat-photo-form" action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+        <br>
+        <label for="indoor">
+            <input id="indoor" type="radio" value="indoor" checked>Indoor
+        </label>
+        <br>
+        <label for="outdoor">
+            <input id="outdoor" type="radio" value="outdoor">Outdoor
+        </label>
+        <br>
+        <label for="loving">
+            <input id="loving" type="checkbox" name="personality" value="loving" checked>Loving
+        </label>
+        <label for="greedy">
+            <input id="greedy" type="checkbox" name="personality" value="greedy">Greedy
+        </label>
+        <label for="lazy">
+            <input id="lazy" type="checkbox" name="personality" value="lazy">Lazy
+        </label>
+    </form>
+
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>
