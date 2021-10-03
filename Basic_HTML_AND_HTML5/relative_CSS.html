@@ -36,6 +36,27 @@
     display: inline;
     margin-right: 20px;
   }
+  body{
+    background: linear-gradient(45deg, red, pink, cyan);
+  }
+  #anime{
+    animation-name: animationName;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes animationName{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: orange;
+    }
+
+  }
 </style>
 </head>
 <body>
@@ -47,12 +68,12 @@
 </nav>
 <h1>On Being Well-Positioned</h1>
 <h2>Move me!</h2>
-<p>I still think the h2 is where it normally sits.</p>
+<p id="anime">I still think the h2 is where it normally sits.</p>
 <section>
     <form id="searchbar">
         <label for="search">Search:</label>
         <input type="search" id="search" name="search">
-        <input type="submit" name="submit" value="Go!">
+        <input  type="submit" name="submit" value="Go!">
     </form>
 </section>
 </body>
