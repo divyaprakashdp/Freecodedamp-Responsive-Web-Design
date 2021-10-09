@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .logo > img {
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
+            max-height: 75px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            text-align: center;
+            margin-left: 20px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            min-height: 75px;
+            max-height: 75px;
+            padding: 0px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #eee;
+        }
+
+       .content, form{
+        display: flex;
+        padding: 25px;
+        margin: 30px auto 5px auto;
+       }
+       nav > ul {
+            width: 35vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+        }
+        @media screen and (display-mode: fullscreen) {
+          /* Code in here only applies to screens in fullscreen */
+          .video{width:700px; height:500px;}
+        }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Product</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="dp-logos.jpeg" >
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Specs">Specs</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Reviews">Reviews</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Prices">Prices</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <input type="email" id="email" placeholder="Enter your email address...">
+                <input type="submit" id="submit" value="submit">
+            </form>
+        </div>
+        <div>
+            <section id="Specs">
+
+            </section>
+            <section id="Reviews">
+                <iframe id="video" width="600" height="315" src="https://www.youtube.com/embed/BPVu5xaZk-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section id="Prices">
+
+            </section>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
