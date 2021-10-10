@@ -6,31 +6,31 @@
             width: 100%;
             height: 100%;
             max-width: 300px;
-            max-height: 75px;
+            max-height: 50px;
             display: flex;
-            justify-content: right;
-            align-items: center;
+            justify-content: left;
+            align-items: left;
             text-align: center;
-            margin-left: 20px;
+            margin: auto 10px;
+        }
+        @media (max-width: 650px)
+        .logo {
+            margin-top: 15px;
+            width: 100%;
+            position: relative;
         }
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            min-height: 75px;
-            max-height: 75px;
-            padding: 0px 20px;
+            min-height: 50px;
+            max-height: 50px;
+            padding: 0px 10px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             background-color: #eee;
         }
-
-       .content, form{
-        display: flex;
-        padding: 25px;
-        margin: 30px auto 5px auto;
-       }
        nav > ul {
             width: 35vw;
             display: flex;
@@ -44,6 +44,26 @@
           /* Code in here only applies to screens in fullscreen */
           .video{width:700px; height:500px;}
         }
+        .upper-content, input[type=email]{
+        display: block;
+        width: 50%;
+        height:30px;
+        margin: 30px auto auto 150px;
+        padding: 1px 20px;
+        align-items: center;
+        text-align: center;
+        }
+
+       .product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: calc(100% / 2);
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
 
 
 
@@ -72,24 +92,63 @@
         </nav>
     </header>
     <div class="content">
-        <div>
-            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-                <input type="email" id="email" placeholder="Enter your email address...">
-                <input type="submit" id="submit" value="submit">
-            </form>
+        <div class="upper-content">
+            <div>
+                <h2>Samsung M51</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
+                    <input type="submit" id="submit" value="submit">
+                </form>
+            </div>
+
+
+            <div>
+                <section id="Specs">
+                    <p>
+                        The Samsung Galaxy M51 is the first smartphone from the company to pack in a massive 7,000mAh battery. The Galaxy  M51 also gets a bigger 6.7-inch SuperAMOLED display with a full-HD+ resolution. Samsung has opted for the 20:9 aspect ratio which makes the device tall and narrow. The Galaxy M51 has a hole-punch camera at the center towards the top of the display. A few users could find this distracting while watching content.
+
+                        Powering the Galaxy M51 is the Qualcomm Snapdragon 730G SoC which is a first for a Galaxy M series smartphone. It is capable of loading apps quickly as well as multitasking without any issues. Samsung has launched two variants, one with 6GB of RAM and 64GB of storage and the other with 8GB RAM and 128GB of storage. The Galaxy M51 has two Nano-SIM slots and a dedicated slot for microSD. The Galaxy M51 offered good performance without any lag or stutter when we used it.
+
+                        Samsung has gone with a quad-camera setup on the Galaxy M51 consisting of a 64-megapixel primary camera, a 12-megapixel ultra-wide-angle camera, a macro camera and a depth sensor. The camera clicked good photos in daylight with abundant details. Photos clicked using the wide-angle camera has distortion at the edges. Video recording tops out at 4K for the primary as well as the selfie camera but video stabilisation isn't great.
+
+                        Battery performance was excellent and we could go beyond two days without needing the smartphone to be charged. The supplied charger is also quick to charge the device.
+                    </p>
+                </section>
+                <section id="Reviews">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/bUOXFzVIsJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section id="Prices">
+                    <div class="product" id="6gb">
+                        <div class="level">6GB RAM</div>
+                        <h2>Rs. 19999</h2>
+                        <ol>
+                            <li>
+                                <a href="https://www.flipkart.com/samsung-galaxy-m51-celestial-black-128-gb/p/itmd2177301257bb?pid=MOBFVV4HRYZSYBA6&lid=LSTMOBFVV4HRYZSYBA6DCMZSY&marketplace=FLIPKART&q=m51&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=151557ab-1570-4212-8165-4aaa69db7e74.MOBFVV4HRYZSYBA6.SEARCH&ppt=hp&ppn=homepage&ssid=o1bvhb1f0w0000001633840252494&qH=d92b5fc2b3ef12e8" target="_blank">Flipkart</a>
+
+                            </li>
+                            <li>
+                                <a target="_parent" href="https://www.amazon.in/dp/B085J1J32G?tag=kp-web-price-in-india-21&linkCode=ogi&th=1&psc=1&SubscriptionId=AKIAJZ7ZVEW7WHEFIMWA&ascsubtag=81275990&language=en_IN">Amazon</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="product" id="8gb">
+                        <div class="level">8GB RAM</div>
+                        <h2>Rs. 22500</h2>
+                        <ol>
+                            <li>
+                                <a href="https://www.flipkart.com/samsung-galaxy-m51-celestial-black-128-gb/p/itmd2177301257bb?pid=MOBFVV4HRYZSYBA6&lid=LSTMOBFVV4HRYZSYBA6DCMZSY&marketplace=FLIPKART&q=m51&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=151557ab-1570-4212-8165-4aaa69db7e74.MOBFVV4HRYZSYBA6.SEARCH&ppt=hp&ppn=homepage&ssid=o1bvhb1f0w0000001633840252494&qH=d92b5fc2b3ef12e8" target="_blank">Flipkart</a>
+
+                            </li>
+                            <li>
+                                <a target="_parent" href="https://www.amazon.in/dp/B085J1J32G?tag=kp-web-price-in-india-21&linkCode=ogi&th=1&psc=1&SubscriptionId=AKIAJZ7ZVEW7WHEFIMWA&ascsubtag=81275990&language=en_IN">Amazon</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div>
-            <section id="Specs">
 
-            </section>
-            <section id="Reviews">
-                <iframe id="video" width="600" height="315" src="https://www.youtube.com/embed/BPVu5xaZk-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-
-            <section id="Prices">
-
-            </section>
-        </div>
     </div>
 
 
