@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
     <style>
+        body{
+            color: white;
+            background-color: #ffa64d;
+            background: linear-gradient(
+              115deg,
+              rgba(58, 58, 158, 0.8),
+              rgba(136, 136, 206, 0.7)
+            ),
+            url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+              background-position: right;
+              background-size: cover;
+        }
         .logo > img {
             width: 100%;
             height: 100%;
@@ -22,16 +35,18 @@
         header {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             min-height: 50px;
             max-height: 50px;
             padding: 0px 10px;
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            background-color: #eee;
+            align-items: left;
+            background: linear-gradient(
+              115deg, white, blue, yellow, red, black);
         }
-       nav > ul {
+       nav > ul, ol {
             width: 35vw;
             display: flex;
             flex-direction: row;
@@ -46,7 +61,7 @@
         }
         .upper-content, input[type=email]{
         display: block;
-        width: 50%;
+        width: 70%;
         height:30px;
         margin: 30px auto auto 150px;
         padding: 1px 20px;
@@ -59,11 +74,17 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	width: calc(100% / 2);
+	width: 45%;
 	margin: 10px;
 	border: 1px solid #000;
 	border-radius: 3px;
+	float: left;
+	clear: none;
+	color: white;
+	background: #0059b3;
+	opacity: 0.7;
 }
+p{text-align: left; color: white;}
 
 
 
@@ -106,11 +127,14 @@
                 <section id="Specs">
                     <p>
                         The Samsung Galaxy M51 is the first smartphone from the company to pack in a massive 7,000mAh battery. The Galaxy  M51 also gets a bigger 6.7-inch SuperAMOLED display with a full-HD+ resolution. Samsung has opted for the 20:9 aspect ratio which makes the device tall and narrow. The Galaxy M51 has a hole-punch camera at the center towards the top of the display. A few users could find this distracting while watching content.
-
+                    </p>
+                    <p>
                         Powering the Galaxy M51 is the Qualcomm Snapdragon 730G SoC which is a first for a Galaxy M series smartphone. It is capable of loading apps quickly as well as multitasking without any issues. Samsung has launched two variants, one with 6GB of RAM and 64GB of storage and the other with 8GB RAM and 128GB of storage. The Galaxy M51 has two Nano-SIM slots and a dedicated slot for microSD. The Galaxy M51 offered good performance without any lag or stutter when we used it.
-
+                    </p>
+                    <p>
                         Samsung has gone with a quad-camera setup on the Galaxy M51 consisting of a 64-megapixel primary camera, a 12-megapixel ultra-wide-angle camera, a macro camera and a depth sensor. The camera clicked good photos in daylight with abundant details. Photos clicked using the wide-angle camera has distortion at the edges. Video recording tops out at 4K for the primary as well as the selfie camera but video stabilisation isn't great.
-
+                    </p>
+                    <p>
                         Battery performance was excellent and we could go beyond two days without needing the smartphone to be charged. The supplied charger is also quick to charge the device.
                     </p>
                 </section>
@@ -128,7 +152,7 @@
 
                             </li>
                             <li>
-                                <a target="_parent" href="https://www.amazon.in/dp/B085J1J32G?tag=kp-web-price-in-india-21&linkCode=ogi&th=1&psc=1&SubscriptionId=AKIAJZ7ZVEW7WHEFIMWA&ascsubtag=81275990&language=en_IN">Amazon</a>
+                                <a target="_blank" href="https://www.amazon.in/dp/B085J1J32G?tag=kp-web-price-in-india-21&linkCode=ogi&th=1&psc=1&SubscriptionId=AKIAJZ7ZVEW7WHEFIMWA&ascsubtag=81275990&language=en_IN">Amazon</a>
                             </li>
                         </ol>
                     </div>
