@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
+<style>
     body{
         display: block;
           color: white;
@@ -13,33 +10,114 @@
         }
     #welcome-section{
           display: block;
+          text-align: center;
+          padding: 10rem 2rem;
           color: white;
           width:100%;
-          height: 500px;
-          position: relative;
-
+          height:100vh;
           background:
+              linear-gradient(115deg, #3a3d40 0%, #181719 100%),
               linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
               linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
               linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
               linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+              linear-gradient(150deg, #1b1b1b 10px, transparent 10px),
               linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
               background-color: #131313;
-              background-size: 20px 20px;
+              background-size: 50px 30px;
     }
     #welcome-section>#welcome-section-text{
-        padding: 150px;
+        padding: 70px;
         font-family: Monospace;
         font-size: 2vw;
+
     }
     #navbar{
         display: flex;
-        text-align; right;
+        position: row;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        top: 0;
+        left: 0;
+        padding: 0px 100px;
+        box-sizing: border-box;
+        background-color: #be3144;
+    }
+    nav ul{
+      float: left;
+    }
+    nav ul li{
+
+      display: inline-block;
+      list-style: none;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 0px 32px;
+    }
+    nav ul li a:hover{
+      background-color: silver;
+      display: inline-block;
+    }
+    nav ul li a:active{
+      background-color: silver;
+    }
+    .project-section{
+      display: block;
+      text-align: center;
+      padding: 10rem 2rem;
+      background: #45567d;
+      color: white;
+      width:100%;
 
     }
+    #profiles{
+      display: block;
+      text-align: center;
+      padding: 10rem 2rem;
+      background: #303841;
+      color: white;
+      width:100%;
+    }
+    section ul li{
+      display: inline-block;
+      list-style: none;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 0px 32px;
+    }
+    section a{
+      color: white;
+    }
+    .projects-section-header {
+	max-width: 640px;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.2rem solid white;
+}
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
 
   </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
 </head>
@@ -59,20 +137,22 @@
         </div>
 
       </section>
-      <section id="project-tile">
+      <section id="projects" class="project-section">
+          <h2 class="projects-section-header">My Projects</h2>
           <ul>
-            <li><a href="https://codepen.io/divyaprakashdp/full/WNENeQQ">Survey Page</a></li>
-            <li><a href="https://codepen.io/divyaprakashdp/full/VwzZJGm">Tribute Page</a></li>
-            <li><a href="https://codepen.io/divyaprakashdp/full/dyzyBWb">Documentation Page</a></li>
-            <li><a href="https://codepen.io/divyaprakashdp/full/zYdYzyg"></a>Product Landing Page</li>
+            <li class="project-tile"><a href="https://codepen.io/divyaprakashdp/full/WNENeQQ">Survey Page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/divyaprakashdp/full/VwzZJGm">Tribute Page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/divyaprakashdp/full/dyzyBWb">Documentation Page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/divyaprakashdp/full/zYdYzyg">Product Landing Page</a></li>
           </ul>
       </section>
-      <section id="profile-link">
+      <section id="profiles">
+        <h2 class="profile-section-header">Contact Me</h2>
         <ul>
-          <li><a href="https://github.com/divyaprakashdp">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/divyaprakashdp/">LinkedIn</a></li>
-          <li><a href="d.prakash1506@gmail.com">Send an Email</a></li>
-          <li><a href="">Call Me</a></li>
+          <li><a id="profile-link" target="_blank" href="https://github.com/divyaprakashdp">Github</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/divyaprakashdp/">LinkedIn</a></li>
+          <li><a target="_blank" href="d.prakash1506@gmail.com">Send an Email</a></li>
+          <li><a target="_blank" href="">Call Me</a></li>
         </ul>
       </section>
     </div>
